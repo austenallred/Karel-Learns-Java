@@ -1,0 +1,76 @@
+/*
+ * File: StoneMasonKarel.java
+ * --------------------------
+ * The StoneMasonKarel subclass as it appears here does nothing.
+ * When you finish writing it, it should solve the "repair the quad"
+ * problem from Assignment 1.  In addition to editing the program,
+ * you should be sure to edit this comment so that it no longer
+ * indicates that the program does nothing.
+ */
+
+import stanford.karel.*;
+
+public class StoneMasonKarel extends SuperKarel {
+	public void run(){
+		while (rightIsClear()){
+		checkColumn();
+		moveColumns();
+		}
+	}
+	// You fill in this part
+	
+	
+	/*First, Check column (starting at the bottom moving up)
+	 * 	If there's no beeper, but a beeper
+	 * 	Stop when blocked
+	 *Next, move to next column (move to bottom - turn right, move four over, move four down)
+	 *	Move to the bottom - face south and move until blocked
+	 *
+	 *	At very 
+	 *
+	 *
+	 * 
+	 */
+private void checkColumn(){
+	turnLeft();
+	if (frontIsClear()) {
+		setBeeper();
+		move();
+	}
+	else {
+	}
+	//checkFirstBeeper();
+	//while front isn't blocked
+	//move, setbeeper
+	
+}
+
+private void setBeeper(){
+	if (noBeepersPresent()) {
+		putBeeper();
+	}
+}
+
+private void moveColumns(){
+	turnRight();
+	move();
+	move();
+	move();
+	move();
+	turnRight();
+//	move();
+//	move();
+//	move();
+//	move();
+	//turn right
+	//check to see if finished
+	//move over
+	//move down
+}
+
+private void checkFirstBeeper(){
+	//if beeper not present
+//	move();
+//	move();
+}
+}
