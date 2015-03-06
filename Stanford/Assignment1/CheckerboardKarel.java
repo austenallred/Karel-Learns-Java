@@ -18,7 +18,6 @@ public class CheckerboardKarel extends SuperKarel {
 		fillRow();
 		//Turns and fills until the checkerboard done
 		turnAndFill();
-		move();
 	}	
 
 private void fillRow(){
