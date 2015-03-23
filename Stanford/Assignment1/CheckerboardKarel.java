@@ -31,6 +31,7 @@ private void fillRow(){
 			move();
 		}
 	} 
+	
 }
 
 private void turnAndFill(){
